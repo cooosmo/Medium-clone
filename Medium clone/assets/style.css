@@ -1,0 +1,249 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Heebo", sans-serif;
+}
+
+/* UTILITY */
+.container {
+    display: block;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+p {font-size: 1.2rem;}
+
+.mb-20 {margin-bottom: 20px;}
+
+.mb-50 {margin-bottom: 50px;}
+
+.txt-col {color:#828282;}
+
+.d-flex {display: flex;}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.border-bottom {border-bottom: 1px solid #ccc;}
+
+.border-right {border-right: 1px solid #ccc;}
+
+.hide-me {display: none;}
+
+a.outline-btn {
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 50px;
+    color:black;
+    font-size: 1.2rem;
+}
+
+.article-title {
+    font-size: 1.6rem;
+    font-weight: 900;
+    line-height: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.text-content {padding-right: 20px;}
+
+.text-content .author p {font-weight: 500;}
+
+.text-content nav ul li:not(:last-child){margin-right: 5px;}
+
+.text-content nav ul li:not(:last-child)::after {content:' •'}
+
+
+/* HEADER */
+header {box-shadow: 0px 5px 10px 3px rgba(154, 154, 154, 0.1);}
+
+header .container {justify-content: space-between;}
+
+header .logo img {width: 160px;}
+
+
+header nav ul li {margin-right: 15px;}
+
+header nav ul li:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #F4511E;
+}
+
+header nav ul li:last-child a {
+    align-self: center;
+    color: white;
+}
+
+
+/* MAIN */
+main {
+    max-width: 70%;
+    padding: 0 50px 0 10px;
+}
+
+.tab-wrapper {
+    padding-top:50px;
+    margin-bottom: 50px;
+}
+
+.tab-wrapper nav {display: flex;}
+
+.tab-wrapper nav .tab {
+    text-transform: uppercase;
+    padding: 10px;
+    color:#aaa;
+}
+
+.tab-wrapper nav .tab.tab__active {
+    font-weight: bold;
+    color:#292929;
+    border-bottom: 1px solid #292929;
+}
+
+.text-content {
+    width: 100%;
+    max-width: 680px;
+}
+
+.author {margin-bottom: 10px;}
+
+.author img {
+    width: 24px;
+    height: 24px;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.article-wrapper,
+.article-wrapper nav {justify-content: space-between;}
+
+.article-wrapper {margin-bottom: 50px;}
+
+.article-wrapper img.preview-img {
+    width: 300px;
+    height: 150px;
+}
+.article-wrapper p.txt-preview {margin-bottom: 15px;}
+
+.article-wrapper nav ul li.category span {
+    background-color: #eee;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.article-wrapper .btns i {
+    padding: 0 10px;
+}
+
+
+/* ASIDE */
+aside {
+    max-width: 30%;
+    padding: 0 10px 0 50px;
+}
+
+aside h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+aside section:not(.recent) ul {
+    flex-wrap: wrap;
+}
+
+aside section:not(.recent) ul li {
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    border-radius: 50px;
+    margin: 10px 10px 5px 0;
+    cursor: pointer;
+    color:black;
+}
+
+.twitter-connect {
+    padding: 40px 0 40px 40px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.twitter-connect p.logos {
+    font-size: 2.5rem;
+    color: grey;
+    font-weight: 100;
+}
+
+.twitter-connect p.logos i.fa-medium {
+    font-size: 3rem;
+    color: black;
+}
+
+.twitter-connect p.logos i.fa-twitter,
+.twitter-connect a.outline-btn i {color: #37A1F2;}
+
+.twitter-connect p:nth-child(2) {line-height: 1.5rem;}
+
+.twitter-connect a.outline-btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    color:black;
+}
+
+.twitter-connect a:not(.outline-btn) {
+    color:dimgray;
+    text-decoration: underline;
+}
+
+.recommended ul{flex-wrap: wrap;}
+
+.recommended ul li {background-color: #eee;}
+
+.to-follow .items-wrapper {margin-top: 20px;}
+
+.to-follow .item{
+    justify-content:space-between;
+    align-items: center;
+}
+
+.to-follow .item img {
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+}
+
+.to-follow .txt-content {
+    padding: 0 15px;
+}
+
+.to-follow .item h4 {
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.to-follow .item p {font-size: .9rem;}
+
+.recent .text-content:first-child nav ul li:last-child::after {
+    content: '★';
+    margin-left: 10px;
+}
+
+.recent .items-wrapper a {color:green;}
+
+aside section.links ul li {
+    color:dimgray;
+    padding: 0;
+    margin: 10px 25px 5px 0;
+}
+
